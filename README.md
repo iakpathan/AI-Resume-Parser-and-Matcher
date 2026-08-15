@@ -1,4 +1,3 @@
-```markdown
 # AI Resume Parser & Matcher 🤖📄
 
 An automated, intelligent recruitment pipeline built with **Python**, **Pydantic**, **Groq LLM**, and document-parsing libraries to automatically extract, evaluate, match, and rank candidate resumes against specific job descriptions.
@@ -26,7 +25,6 @@ graph TD
         H -->|Sort by Score Descending| I[Top 2 Candidates]
         H -->|Sort by Score Descending| J[Lowest 2 Candidates]
     end
-
 
 ---
 
