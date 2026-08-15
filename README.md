@@ -9,8 +9,8 @@ An automated, intelligent recruitment pipeline built with **Python**, **Pydantic
 ```mermaid
 graph TD
     subgraph Input Phase
-        A[Job Description Text] -->|Parsed by LLM & Pydantic| B[Structured Job Object]
-        C[Resumes Folder: PDF / DOCX] -->|Read Files via PyPDF & python-docx| D[Raw Resume Text]
+        A[Job Description Text] -->|LLM & Pydantic Extraction| B[Structured Job Object]
+        C[Resumes Folder: PDF / DOCX] -->|File Readers: PyPDF & python-docx| D[Raw Resume Text]
     end
 
     subgraph Processing Phase
@@ -25,8 +25,6 @@ graph TD
         H -->|Sort by Score Descending| I[Top 2 Candidates]
         H -->|Sort by Score Descending| J[Lowest 2 Candidates]
     end
-
----
 
 ## ⚙️ Step-by-Step Workflow
 
