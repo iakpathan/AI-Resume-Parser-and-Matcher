@@ -7,7 +7,7 @@ An automated, intelligent recruitment pipeline built with **Python**, **Pydantic
 
 ## 🏗️ Architecture Flow Diagram
 
-```mermaid
+
 graph TD
     subgraph Input Phase
         A[Job Description Text] -->|Parsed by LLM & Pydantic| B[Structured Job Object]
@@ -27,7 +27,7 @@ graph TD
         H -->|Sort by Score Descending| J[Lowest 2 Candidates]
     end
 
-```
+
 
 ---
 
